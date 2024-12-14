@@ -1,3 +1,4 @@
+# CSS Styles
 css = """
 <style>
 .chat-message {
@@ -23,12 +24,14 @@ css = """
   padding: 0 1.5rem;
   color: #fff;
 }
+</style>
 """
 
+# HTML Templates
 bot_template = """
 <div class="chat-message bot">
     <div class="avatar">
-        <img src="./dog.jpg" style="max-height: 78px; max-width: 78px; border-radius: 50%; object-fit: cover;">
+        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>🐶</text></svg>">
     </div>
     <div class="message">{{MSG}}</div>
 </div>
@@ -37,7 +40,7 @@ bot_template = """
 user_template = """
 <div class="chat-message user">
     <div class="avatar">
-        <img src="./cat.jpg">
+        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>🐱</text></svg>">
     </div>    
     <div class="message">{{MSG}}</div>
 </div>
